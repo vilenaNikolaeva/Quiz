@@ -1,0 +1,24 @@
+.welcomeContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:13%;
+}
+
+.welcomeTitle{
+    font-size: xxx-large;
+    color: beige;
+}
+
+.startQuizButton{
+    margin: auto;
+    margin-top: 4%;
+    background-color: #fff301;
+    padding: 1em 2.5rem;
+    border-radius:4em ;
+    font-weight: 600;
+    border:none;
+}
+
+
