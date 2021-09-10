@@ -12,25 +12,25 @@ export default function Question({
 
   const [completed, setCompleted] = useState(0);
  const [seconds, setSeconds] = useState(0);
-  const [intervalId,setIntervalId] = useState(0);
+//   const [intervalId,setIntervalId] = useState(0);
 
-  useEffect(() => {
-    let time = 20;
-    let counter = 0;
+//   useEffect(() => {
+//     let time = 20;
+//     let counter = 0;
 
-    let progressBarInterval = setInterval(() => {
-      counter++;
-      setSeconds(counter);
-      if(counter <= time){
-        setCompleted(counter/ time * 100);
-      }
-      else{
-        changeQuestion();
-      }
-    }, 1000);
+//     let progressBarInterval = setInterval(() => {
+//       counter++;
+//       setSeconds(counter);
+//       if(counter <= time){
+//         setCompleted(counter/ time * 100);
+//       }
+//       else{
+//         changeQuestion();
+//       }
+//     }, 1000);
 
-    return () => clearInterval(progressBarInterval);
- }, [question]);
+//     return () => clearInterval(progressBarInterval);
+//  }, [question]);
 
   const checkForCodeSnippet = () => {
     if (question.codeSnippet === "true") {
@@ -40,7 +40,7 @@ export default function Question({
 
   return (
     <div>
-      <ProgressBar bgcolor={"red"} completed={completed} seconds={seconds}  />
+      {/* <ProgressBar bgcolor={"red"} completed={completed} seconds={seconds}  /> */}
       <div className={styles.quizContainer} id="quizContainer">
       <div className={styles.question}>
         <h2>{question.title}</h2>

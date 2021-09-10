@@ -1,7 +1,4 @@
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 40%;
     margin: 3rem auto 6rem;
     margin-top:8%;
@@ -9,7 +6,6 @@
 }
 
 .quiz {
-    color: rgb(35, 57, 58);
     overflow: auto;
 }
 
@@ -76,4 +72,3 @@
 .quiz>p {
     font: 1.2em;
 }
-
